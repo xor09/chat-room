@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Chat Room</title>
+</head>
+
+<body>
+    <div class="inner-body">
+        <div class="chat-page">
+            <div class="chat-left">
+                <div class="chat-leave" onclick="location.href = './index.html';">
+                    <a href="./index.html" style="text-decoration: none; color: aliceblue;">Leave the chat</a>
+                </div>
+                <div class="chat-ID">
+
+                </div>
+                <div class="chat-name">
+                    <div class="chat-title">
+                        <span>Members</span>
+                    </div>
+                    <div class="chat-members">
+
+                    </div>
+                </div>
+            </div>
+            <div class="chat-right">
+                <div class="message-viewer" id="viewPort">
+
+
+                </div>
+                <form class="message-box" id="chat-form" autocomplete="off">
+                    <!-- <div class="mb-3 col-12"> -->
+                    <input class="form-control input-lg " id="sendMessage" type="text" placeholder="Enter Message">
+                    <!-- </div> -->
+                    <button class="submit send-button" id="send"><i class="fa fa-paper-plane send-logo"
+                            aria-hidden="true"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.2/qs.min.js"
+        integrity="sha512-ErYZLDi4WRoox2JhOIADWBydTRhMJ0KIXnv5C1GvuY8YooLGapnebaM3iRGhwS6/E9ONXj0MRXp6bhu73sdFkg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src='/socket.io/socket.io.js'></script>
+    <script type="text/javascript" src='js/index.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
