@@ -6,7 +6,7 @@ let viewPort = document.querySelector(".message-viewer");
 let chatIDView = document.querySelector(".chat-ID");
 let memberNameView = document.querySelector(".chat-members");
 
-// get username and room from URL
+// get username and room id from URL
 const { username, chatID } = Qs.parse(location.search, {
   ignoreQueryPrefix: true,
 });
